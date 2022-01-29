@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    /*
+    let gps = [24.232, 43.222];
+
+    [longitude, latitude] = gps
+
+    console.log(longitude)
+    console.log(latitude)
+
+    let arr = [1, 2];
+    [arr[1], arr[0]] = arr
+
+    console.log(arr)
+
+
+
+    let ages = [54, 65, 4]
+
+    let result = ages.sort((a, b) => a - b)
+    
+    let [age1] = result
+
+    console.log([age1])
+
+
+
+    let helyezettek = ['Tibor', 'Eszter', 'David', 'Adam','Aladar']
+
+    let [hely1, hely2, hely3, ...rest] = helyezettek
+
+    let rendez = (array) => {return `First: ${hely1} Second: ${hely2} Third: ${hely3} Others: ${rest}`} 
+
+    console.log(rendez(helyezettek))
+
+
+
+
+    const func = ([first, second, third, ...others]) => {
+        return {
+            first: first,
+            second: second,
+            third: third,
+            others: others
+            }
+        }
+
+    console.log(func(['Tibor', 'Eszter', 'David', 'Adam','Aladar']))
+*/
+const options = {
+  display: 'block',
+}
+
+let {visible = false, display} = options
+
+console.log(visible)
+
+
+
+const user = {
+  firstName: 'Elemér',
+  lastName: 'Nagy',
+}
+
+let highlight = ({firstName, lastName} = user) => {
+    console.log(`Kedves <strong>${user.firstName} ${user.lastName}<strong>!`)
+}
+
+highlight(user); 
+// visszatérése: ' Kedves <strong>Nagy Elemér<strong>!'
+
+
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>
